@@ -1,0 +1,66 @@
+ul {
+    background: grey;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+#homer {
+    
+    position: absolute;
+    left: 30%;
+    top: 0;
+}
+
+.bubble {
+    content:"";
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    margin: 0;
+    display: block;
+    height: 100px;
+    width: 200px;
+    background-color: grey;
+}
+
+.bubble::before {
+    
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    background-color: grey;
+    font-weight: bold;
+    bottom: -10%;
+    height: 25px;
+    width: 25px;
+    z-index: -10;
+}
+
+.bubble::after {
+    
+    content: "";
+    border-radius: 15px;
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    bottom: -15%;
+    height: 25px;
+    width: 25px;
+    left: 5%;
+    z-index: -5;
+    
+}
+
+.innerBox {
+        border-radius: 12px;
+        background-color: orange;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        height: 30px;
+        width: 180px;
+        margin: 0;
+        padding: 1px;
+}
