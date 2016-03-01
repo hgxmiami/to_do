@@ -9,28 +9,23 @@
     
     </head>
     
-    
     <body>
         
         <div class="bubble" input="text">
         <input class="innerBox" id="innerBox" type="text" align="center"></div>
         <button class="button" id="search1">Click on Me</button>
-        <ul align="center">To-Do</ul>
+        <ul align="center" id="items">To-Do</ul>
         <img src="guy.svg" id="homer">
 
-      
-
-    </body>
+      </body>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
    
- $( "#innerBox" ).keypress(function() {
-  console.log( "test" );
+ $( "#innerBox" ).keypress(function(event) {
+    if (event.keyCode === 13)
+     $("#items").append('<li>'+$("#innerBox").val()+'</li>');
 });
     
-    
     </script>
-
-
 
 </html>
