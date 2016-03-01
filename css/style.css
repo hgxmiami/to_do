@@ -64,3 +64,11 @@ ul {
         margin: 0;
         padding: 1px;
 }
+.selected {
+    
+    
+}
+.selected::before {
+    content: "";
+    width:
+}

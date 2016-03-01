@@ -13,14 +13,23 @@
     <body>
         
         <div class="bubble" input="text">
-        <div class="innerBox" input="text" align="center">Test2</div>
-        </div>
-        <ul>To-Do</ul>
+        <input class="innerBox" id="innerBox" type="text" align="center"></div>
+        <button class="button" id="search1">Click on Me</button>
+        <ul align="center">To-Do</ul>
         <img src="guy.svg" id="homer">
 
       
 
     </body>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+   
+ $( "#innerBox" ).keypress(function() {
+  console.log( "test" );
+});
+    
+    
+    </script>
 
 
 
